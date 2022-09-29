@@ -187,3 +187,241 @@ There are 1 unused configuration paths:
 2022-09-29 16:55:35.252412 (Thread-24): handling status request
 2022-09-29 16:55:35.253692 (Thread-24): 16:55:35  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f5f2dd7d-5a8e-424a-b2ac-a5413d88ef3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f13e7f12400>]}
 2022-09-29 16:55:35.254192 (Thread-24): sending response (<Response 1718 bytes [200 OK]>) to 10.0.42.182
+2022-09-29 20:06:33.443523 (MainThread): Running with dbt=1.2.1
+2022-09-29 20:06:33.587169 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt_rpc.task.server.RPCServerTask'>, debug=None, defer=None, exclude=None, fail_fast=None, host='0.0.0.0', log_cache_events=False, log_format=None, models=None, partial_parse=True, port=8580, printer_width=None, profile='user', profiles_dir='/usr/src/develop/.dbt', project_dir=None, record_timing_info=None, rpc_method=None, send_anonymous_usage_stats=None, single_threaded=False, state=None, static_parser=None, target=None, threads=None, use_colors=None, use_experimental_parser=None, vars='{}', version_check=None, warn_error=None, which='rpc', write_json=None)
+2022-09-29 20:06:33.595177 (MainThread): Tracking: tracking
+2022-09-29 20:06:33.610383 (MainThread): 20:06:33  Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36cd070c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36b81e2880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36b818f850>]}
+2022-09-29 20:06:33.610781 (MainThread): Serving RPC server at 0.0.0.0:8580, pid=22
+2022-09-29 20:06:33.611065 (MainThread): Supported methods: ['build', 'cli_args', 'compile', 'compile_sql', 'deps', 'docs.generate', 'gc', 'get-manifest', 'kill', 'list', 'poll', 'ps', 'run', 'run-operation', 'run_sql', 'seed', 'snapshot', 'snapshot-freshness', 'source-freshness', 'status', 'test']
+2022-09-29 20:06:33.611231 (MainThread): Send requests to http://localhost:8580/jsonrpc
+2022-09-29 20:06:33.672224 (Thread-12): 20:06:33  Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+2022-09-29 20:06:33.672406 (Thread-12): 20:06:33  Partial parsing enabled, no changes found, skipping parsing
+2022-09-29 20:06:33.672764 (Thread-12): 20:06:33  [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2022-09-29 20:06:33.678408 (Thread-12): 20:06:33  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '55775f0d-ed1f-4b27-ab87-aa0c7a38d763', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36b80a7ca0>]}
+2022-09-29 20:06:37.454449 (Thread-13): handling ps request
+2022-09-29 20:06:37.454857 (Thread-13): 20:06:37  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '55775f0d-ed1f-4b27-ab87-aa0c7a38d763', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36b812f6d0>]}
+2022-09-29 20:06:37.455452 (Thread-13): sending response (<Response 106 bytes [200 OK]>) to 10.0.17.250
+2022-09-29 20:06:47.300179 (Thread-14): handling status request
+2022-09-29 20:06:47.301834 (Thread-14): 20:06:47  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '55775f0d-ed1f-4b27-ab87-aa0c7a38d763', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36b812f550>]}
+2022-09-29 20:06:47.302337 (Thread-14): sending response (<Response 1718 bytes [200 OK]>) to 10.0.17.250
+2022-09-29 20:07:08.911745 (Thread-15): handling status request
+2022-09-29 20:07:08.913399 (Thread-15): 20:07:08  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '55775f0d-ed1f-4b27-ab87-aa0c7a38d763', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36b812f430>]}
+2022-09-29 20:07:08.913878 (Thread-15): sending response (<Response 1718 bytes [200 OK]>) to 10.0.17.250
+2022-09-29 20:07:22.193008 (Thread-16): handling status request
+2022-09-29 20:07:22.193414 (Thread-16): 20:07:22  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '55775f0d-ed1f-4b27-ab87-aa0c7a38d763', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36b812f160>]}
+2022-09-29 20:07:22.193916 (Thread-16): sending response (<Response 1718 bytes [200 OK]>) to 10.0.17.250
+2022-09-29 20:09:36.747720 (Thread-17): handling status request
+2022-09-29 20:09:36.748155 (Thread-17): 20:09:36  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '55775f0d-ed1f-4b27-ab87-aa0c7a38d763', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36b812ff70>]}
+2022-09-29 20:09:36.748619 (Thread-17): sending response (<Response 1718 bytes [200 OK]>) to 10.0.17.250
+2022-09-29 20:12:59.600145 (Thread-18): handling status request
+2022-09-29 20:12:59.601760 (Thread-18): 20:12:59  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '55775f0d-ed1f-4b27-ab87-aa0c7a38d763', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36b812feb0>]}
+2022-09-29 20:12:59.602246 (Thread-18): sending response (<Response 1718 bytes [200 OK]>) to 10.0.17.250
+2022-09-29 20:12:59.838644 (Thread-19): handling run_sql request
+2022-09-29 20:12:59.838937 (Thread-19): 20:12:59  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '55775f0d-ed1f-4b27-ab87-aa0c7a38d763', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36b8094910>]}
+2022-09-29 20:13:02.199131 (Thread-19): sending response (<Response 139 bytes [200 OK]>) to 10.0.17.250
+2022-09-29 20:13:02.227119 (MainThread): 20:13:02  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '874bc7a2-067a-4147-bc7a-21bb883e6af7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbade705790>]}
+2022-09-29 20:13:02.227649 (MainThread): 20:13:02  Found 2 models, 0 tests, 0 snapshots, 0 analyses, 285 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+2022-09-29 20:13:02.228239 (Thread-1): 20:13:02  Acquiring new bigquery connection "rpc.nhl_fantasy.request"
+2022-09-29 20:13:02.228376 (Thread-1): 20:13:02  Began compiling node rpc.nhl_fantasy.request
+2022-09-29 20:13:02.228569 (Thread-1): 20:13:02  Compiling rpc.nhl_fantasy.request
+2022-09-29 20:13:02.229958 (Thread-1): 20:13:02  finished collecting timing info
+2022-09-29 20:13:02.230090 (Thread-1): 20:13:02  Began executing node rpc.nhl_fantasy.request
+2022-09-29 20:13:02.230198 (Thread-1): 20:13:02  Opening a new connection, currently in state init
+2022-09-29 20:13:02.234849 (Thread-1): 20:13:02  On rpc.nhl_fantasy.request: WITH cte_teams AS (
+    SELECT DISTINCT
+          team,
+          season
+    FROM `nhl-analysis-dev.data_lake.moneypuck_teams_regular`
+ORDER BY season,
+         team
+)
+
+  SELECT generate_uuid(),
+         team,
+         season AS year
+    FROM cte_teams
+limit 500
+/* limit added automatically by dbt cloud */
+2022-09-29 20:13:02.457140 (Thread-20): handling poll request
+2022-09-29 20:13:02.457638 (Thread-20): 20:13:02  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '55775f0d-ed1f-4b27-ab87-aa0c7a38d763', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36b8188f40>]}
+2022-09-29 20:13:02.458966 (Thread-20): sending response (<Response 3751 bytes [200 OK]>) to 10.0.17.250
+2022-09-29 20:13:02.521045 (Thread-1): 20:13:02  BigQuery adapter: Unhandled error while running:
+WITH cte_teams AS (
+    SELECT DISTINCT
+          team,
+          season
+    FROM `nhl-analysis-dev.data_lake.moneypuck_teams_regular`
+ORDER BY season,
+         team
+)
+
+  SELECT generate_uuid(),
+         team,
+         season AS year
+    FROM cte_teams
+limit 500
+/* limit added automatically by dbt cloud */
+2022-09-29 20:13:02.521209 (Thread-1): 20:13:02  BigQuery adapter: 404 Not found: Table nhl-analysis-dev:data_lake.moneypuck_teams_regular was not found in location us-central1
+
+(job ID: 77e24d77-f502-4634-b82d-85466059db70)
+
+                 -----Query Job SQL Follows-----                  
+
+    |    .    |    .    |    .    |    .    |    .    |    .    |
+   1:WITH cte_teams AS (
+   2:    SELECT DISTINCT
+   3:          team,
+   4:          season
+   5:    FROM `nhl-analysis-dev.data_lake.moneypuck_teams_regular`
+   6:ORDER BY season,
+   7:         team
+   8:)
+   9:
+  10:  SELECT generate_uuid(),
+  11:         team,
+  12:         season AS year
+  13:    FROM cte_teams
+  14:limit 500
+  15:/* limit added automatically by dbt cloud */
+    |    .    |    .    |    .    |    .    |    .    |    .    |
+2022-09-29 20:13:02.521338 (Thread-1): 20:13:02  finished collecting timing info
+2022-09-29 20:13:02.521500 (Thread-1): Got an exception: Runtime Error
+  404 Not found: Table nhl-analysis-dev:data_lake.moneypuck_teams_regular was not found in location us-central1
+  
+  (job ID: 77e24d77-f502-4634-b82d-85466059db70)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/bigquery/connections.py", line 194, in exception_handler
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/bigquery/connections.py", line 611, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/local/lib/python3.8/dist-packages/google/api_core/retry.py", line 190, in retry_target
+    return target()
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/bigquery/connections.py", line 412, in fn
+    return self._query_and_results(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/bigquery/connections.py", line 596, in _query_and_results
+    iterator = query_job.result(timeout=job_execution_timeout)
+  File "/usr/local/lib/python3.8/dist-packages/google/cloud/bigquery/job/query.py", line 1303, in result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/usr/local/lib/python3.8/dist-packages/google/cloud/bigquery/job/base.py", line 679, in result
+    return super(_AsyncJob, self).result(timeout=timeout, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/google/api_core/future/polling.py", line 137, in result
+    raise self._exception
+google.api_core.exceptions.NotFound: 404 Not found: Table nhl-analysis-dev:data_lake.moneypuck_teams_regular was not found in location us-central1
+
+(job ID: 77e24d77-f502-4634-b82d-85466059db70)
+
+                 -----Query Job SQL Follows-----                  
+
+    |    .    |    .    |    .    |    .    |    .    |    .    |
+   1:WITH cte_teams AS (
+   2:    SELECT DISTINCT
+   3:          team,
+   4:          season
+   5:    FROM `nhl-analysis-dev.data_lake.moneypuck_teams_regular`
+   6:ORDER BY season,
+   7:         team
+   8:)
+   9:
+  10:  SELECT generate_uuid(),
+  11:         team,
+  12:         season AS year
+  13:    FROM cte_teams
+  14:limit 500
+  15:/* limit added automatically by dbt cloud */
+    |    .    |    .    |    .    |    .    |    .    |    .    |
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 384, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 337, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 428, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 90, in execute
+    _, execute_result = self.adapter.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/base/impl.py", line 242, in execute
+    return self.connections.execute(sql=sql, auto_begin=auto_begin, fetch=fetch)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/bigquery/connections.py", line 429, in execute
+    query_job, iterator = self.raw_execute(sql, fetch=fetch)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/bigquery/connections.py", line 420, in raw_execute
+    query_job, iterator = self._retry_and_handle(msg=sql, conn=conn, fn=fn)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/bigquery/connections.py", line 611, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/bigquery/connections.py", line 228, in exception_handler
+    raise RuntimeException(exc_message)
+dbt.exceptions.RuntimeException: Runtime Error
+  404 Not found: Table nhl-analysis-dev:data_lake.moneypuck_teams_regular was not found in location us-central1
+  
+  (job ID: 77e24d77-f502-4634-b82d-85466059db70)
+2022-09-29 20:13:02.523366 (Thread-1): Got exception RPCException(10001, Runtime error, {'type': 'RuntimeException', 'message': 'Runtime Error in rpc request (from remote system)\n  404 Not found: Table nhl-analysis-dev:data_lake.moneypuck_teams_regular was not found in location us-central1\n  \n  (job ID: 77e24d77-f502-4634-b82d-85466059db70)', 'raw_sql': 'WITH cte_teams AS (\n    SELECT DISTINCT\n          team,\n          season\n    FROM `nhl-analysis-dev.data_lake.moneypuck_teams_regular`\nORDER BY season,\n         team\n)\n\n  SELECT generate_uuid(),\n         team,\n         season AS year\n    FROM cte_teams\nlimit 500\n/* limit added automatically by dbt cloud */', 'compiled_sql': 'WITH cte_teams AS (\n    SELECT DISTINCT\n          team,\n          season\n    FROM `nhl-analysis-dev.data_lake.moneypuck_teams_regular`\nORDER BY season,\n         team\n)\n\n  SELECT generate_uuid(),\n         team,\n         season AS year\n    FROM cte_teams\nlimit 500\n/* limit added automatically by dbt cloud */', 'tags': None}, None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 147, in _in_thread
+    self.node_results.append(runner.safe_run(self.manifest))
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 402, in safe_run
+    result = self.error_result(ctx.node, error, started, [])
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 56, in error_result
+    raise error
+dbt_rpc.rpc.error.RPCException: RPCException(10001, Runtime error, {'type': 'RuntimeException', 'message': 'Runtime Error in rpc request (from remote system)\n  404 Not found: Table nhl-analysis-dev:data_lake.moneypuck_teams_regular was not found in location us-central1\n  \n  (job ID: 77e24d77-f502-4634-b82d-85466059db70)', 'raw_sql': 'WITH cte_teams AS (\n    SELECT DISTINCT\n          team,\n          season\n    FROM `nhl-analysis-dev.data_lake.moneypuck_teams_regular`\nORDER BY season,\n         team\n)\n\n  SELECT generate_uuid(),\n         team,\n         season AS year\n    FROM cte_teams\nlimit 500\n/* limit added automatically by dbt cloud */', 'compiled_sql': 'WITH cte_teams AS (\n    SELECT DISTINCT\n          team,\n          season\n    FROM `nhl-analysis-dev.data_lake.moneypuck_teams_regular`\nORDER BY season,\n         team\n)\n\n  SELECT generate_uuid(),\n         team,\n         season AS year\n    FROM cte_teams\nlimit 500\n/* limit added automatically by dbt cloud */', 'tags': None}, None)
+2022-09-29 20:13:03.708404 (Thread-21): handling poll request
+2022-09-29 20:13:03.708841 (Thread-21): 20:13:03  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '55775f0d-ed1f-4b27-ab87-aa0c7a38d763', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36b812f1f0>]}
+2022-09-29 20:13:03.709485 (Thread-21): sending response (<Response 13656 bytes [200 OK]>) to 10.0.17.250
+2022-09-29 20:13:28.342415 (Thread-22): handling status request
+2022-09-29 20:13:28.342823 (Thread-22): 20:13:28  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '55775f0d-ed1f-4b27-ab87-aa0c7a38d763', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36b812fb20>]}
+2022-09-29 20:13:28.343328 (Thread-22): sending response (<Response 1718 bytes [200 OK]>) to 10.0.17.250
+2022-09-29 20:13:28.584749 (Thread-23): handling run_sql request
+2022-09-29 20:13:28.585206 (Thread-23): 20:13:28  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '55775f0d-ed1f-4b27-ab87-aa0c7a38d763', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36b8094130>]}
+2022-09-29 20:13:30.927993 (Thread-23): sending response (<Response 139 bytes [200 OK]>) to 10.0.17.250
+2022-09-29 20:13:30.953804 (MainThread): 20:13:30  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '50eead1e-db37-4383-8e44-7544468098c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc83a3f87f0>]}
+2022-09-29 20:13:30.954346 (MainThread): 20:13:30  Found 2 models, 0 tests, 0 snapshots, 0 analyses, 285 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+2022-09-29 20:13:30.954932 (Thread-1): 20:13:30  Acquiring new bigquery connection "rpc.nhl_fantasy.request"
+2022-09-29 20:13:30.955073 (Thread-1): 20:13:30  Began compiling node rpc.nhl_fantasy.request
+2022-09-29 20:13:30.955269 (Thread-1): 20:13:30  Compiling rpc.nhl_fantasy.request
+2022-09-29 20:13:30.956583 (Thread-1): 20:13:30  finished collecting timing info
+2022-09-29 20:13:30.956720 (Thread-1): 20:13:30  Began executing node rpc.nhl_fantasy.request
+2022-09-29 20:13:30.956829 (Thread-1): 20:13:30  Opening a new connection, currently in state init
+2022-09-29 20:13:30.961378 (Thread-1): 20:13:30  On rpc.nhl_fantasy.request: WITH cte_teams AS (
+    SELECT DISTINCT
+          team,
+          season
+    FROM `nhl-analysis-dev.data_lake.moneypuck_teams`
+ORDER BY season,
+         team
+)
+
+  SELECT generate_uuid(),
+         team,
+         season AS year
+    FROM cte_teams
+limit 500
+/* limit added automatically by dbt cloud */
+2022-09-29 20:13:31.311099 (Thread-24): handling poll request
+2022-09-29 20:13:31.311602 (Thread-24): 20:13:31  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '55775f0d-ed1f-4b27-ab87-aa0c7a38d763', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36b80a7ac0>]}
+2022-09-29 20:13:31.312427 (Thread-24): sending response (<Response 3743 bytes [200 OK]>) to 10.0.17.250
+2022-09-29 20:13:32.222786 (Thread-1): 20:13:32  finished collecting timing info
+2022-09-29 20:13:32.569956 (Thread-25): handling poll request
+2022-09-29 20:13:32.570355 (Thread-25): 20:13:32  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '55775f0d-ed1f-4b27-ab87-aa0c7a38d763', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36b80a7df0>]}
+2022-09-29 20:13:32.571908 (Thread-25): sending response (<Response 28136 bytes [200 OK]>) to 10.0.17.250
+2022-09-29 20:13:50.580309 (Thread-26): 20:13:50  Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+2022-09-29 20:13:50.580677 (Thread-26): 20:13:50  Partial parsing: updated file: nhl_fantasy://models/staging/moneypuck/dim_team.sql
+2022-09-29 20:13:50.593151 (Thread-26): 20:13:50  1699: static parser successfully parsed staging/moneypuck/dim_team.sql
+2022-09-29 20:13:50.656639 (Thread-26): 20:13:50  [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2022-09-29 20:13:50.661619 (Thread-26): 20:13:50  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '55775f0d-ed1f-4b27-ab87-aa0c7a38d763', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3698f31700>]}
+2022-09-29 20:13:51.709747 (Thread-27): handling status request
+2022-09-29 20:13:51.710129 (Thread-27): 20:13:51  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '55775f0d-ed1f-4b27-ab87-aa0c7a38d763', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3698f15460>]}
+2022-09-29 20:13:51.710622 (Thread-27): sending response (<Response 2061 bytes [200 OK]>) to 10.0.17.250
+2022-09-29 20:13:51.849534 (Thread-28): handling status request
+2022-09-29 20:13:51.849818 (Thread-28): 20:13:51  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '55775f0d-ed1f-4b27-ab87-aa0c7a38d763', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3698f15d30>]}
+2022-09-29 20:13:51.850228 (Thread-28): sending response (<Response 2061 bytes [200 OK]>) to 10.0.17.250
+2022-09-29 20:14:06.106703 (Thread-29): handling status request
+2022-09-29 20:14:06.107124 (Thread-29): 20:14:06  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '55775f0d-ed1f-4b27-ab87-aa0c7a38d763', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3698f15ca0>]}
+2022-09-29 20:14:06.107613 (Thread-29): sending response (<Response 2061 bytes [200 OK]>) to 10.0.17.250
