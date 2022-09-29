@@ -7,7 +7,7 @@ ORDER BY season,
          team
 )
 
-  SELECT generate_uuid(),
+  SELECT generate_uuid() AS id,
          team,
          season AS year
     FROM cte_teams
