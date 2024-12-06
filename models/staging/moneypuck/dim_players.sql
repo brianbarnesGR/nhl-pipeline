@@ -1,1 +1,0 @@
-SELECT * FROM `nhl-analysis-dev.data_lake.moneypuck_players`;
